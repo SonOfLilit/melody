@@ -8,7 +8,7 @@ def transpose(halftones, notes):
         note['pitch'] += halftones
         yield note
 
-arpeggio = list(melody.repeat(1, 600,
+arpeggio = list(melody.repeat(4, 600,
     melody.merge([
         melody.melody([
             {'duration': 600, 'pitch': midi.C_3}
