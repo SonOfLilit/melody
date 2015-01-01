@@ -79,9 +79,10 @@ assert list(to_events([
         midi.NoteOffEvent(tick=100, pitch=midi.D_3, velocity=100),
         midi.NoteOffEvent(tick=200, pitch=midi.C_3, velocity=100)]
 
-def pattern():
+def pattern(tempo=120):
     pattern = midi.Pattern()
     pattern.append(TEMPO_SETTINGS)
+    pattern[0].append(midi.SetTempoEvent(bpm=tempo))
     pattern.append(BASIC_SETTINGS)
     return pattern
 
