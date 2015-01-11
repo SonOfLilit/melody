@@ -1,4 +1,3 @@
-import melody
 import play
 import midi
 
