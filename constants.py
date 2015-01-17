@@ -1,2 +1,2 @@
-for name in 'pitch time duration'.split():
+for name in 'channel pitch time duration velocity'.split():
     globals()[name.upper()] = name
